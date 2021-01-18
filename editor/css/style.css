@@ -1,0 +1,384 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+table {
+	border-spacing: 0;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+/* Style for editor */
+
+html {  height: 100%; }
+
+li, ol {  list-style-position: inside;  }
+
+.editor {
+  display: block;
+  width: 80%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  white-space: pre-wrap;
+  margin: 20px auto;
+  border: 1px solid #83baff;
+  min-height: 500px;
+  padding: 10px;
+}
+
+.editor:focus {
+  -webkit-box-shadow: 0 0 5px #83baff;
+          box-shadow: 0 0 5px #83baff;
+}
+
+.editor > a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #83baff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.editor > a:hover { color: #003366; }
+
+#editControls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#content {
+  margin: 50px auto 40px auto;
+  width: 350px;
+  text-align: center;
+  height: 120px;
+}
+
+.hide { display: none;  }
+
+.btn-group {
+  margin: 0 15px;
+  height: 40px;
+  width: auto;
+}
+
+.btn-group > a {
+  font-size: 20px;
+  border: 1px solid #83baff;
+  border-radius: 10px;
+  display: block;
+  min-width: 35px;
+  height: 35px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-decoration: none;
+  padding: 0px 1px;
+  margin: 2px auto;
+  font-size: 1.2rem;
+}
+
+.btn-group > a > i {
+  padding: 6px 8px;
+  margin: 2px auto;
+}
+
+.click {
+  color: black;
+}
+
+.icon-link {
+  background: url(../img/link.svg) no-repeat center center;
+}
+
+.icon-youtube {
+  background: url(../img/youtube.svg) no-repeat center center;
+}
+
+.icon-camera {
+  background: url(../img/camera.svg) no-repeat center center;
+}
+
+.icon-link, .icon-youtube, .icon-camera {
+  background-size: 20px;
+}
+
+#links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: auto;
+  width: 100%;
+}
+
+.bttn {
+  font-size: 1rem;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.bttn-success {
+  padding: 7px 20px;
+  color: #003366;
+  border: 1px solid #83baff;
+  text-decoration: none;
+  background-color: #eff6ff;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+  font-family: 'PT Serif', serif;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 1.5;
+}
+
+.bttn-default {
+  padding: 7px 10px;
+  color: #003366;
+  background-color: #fff;
+  border: 1px dotted #83baff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+  font-family: 'PT Serif', serif;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 1.5;
+}
+
+.bttn-default:hover,
+.bttn-default:focus,
+.bttn-default:active {
+  color: #83baff;
+  border: 1px solid #83baff;
+}
+
+
+.bttn-success:hover,
+.bttn-success:focus,
+.bttn-success:active {
+  color: white;
+  background-color: #83baff;
+}
+
+.inputFile {
+  width: 100%;
+  height: 35px;
+  z-index: 10;
+  position: relative;
+  cursor: text;
+  border: 1px solid #83baff;
+  font-family: 'PT Serif', serif;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.2rem;
+  margin: 5px auto;
+}
+
+.form-control {
+  height: 25px;
+  padding: 3px;
+  font-size: 14px;
+  line-height: 25px;
+  color: #003366;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #83baff;
+  border-radius: 2px;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+}
+
+.input-file-container {
+  position: relative;
+  width: 350px;
+  margin: 5px auto;
+} 
+.js .input-file-trigger {
+  display: block;
+  padding: 15px;
+  background: #ffffff;
+  color: #003366;
+  font-size: 20px;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  cursor: pointer;
+  border: 1px solid #83baff;
+  border-radius: 10px;
+  text-align: center;
+  margin: 5px auto;
+}
+.js .input-file {
+  position: absolute;
+  top: 0; left: 0;
+  width: 350px;
+  opacity: 0;
+  padding: 14px 0;
+  cursor: pointer;
+}
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+  background: #83baff;
+  color: #ffffff;
+}
+
+.file-return {
+  margin: 0;
+}
+.file-return:not(:empty) {
+  margin: 10px 0;
+}
+.js .file-return {
+  font-style: italic;
+  font-size: 18px;
+  font-weight: bold;
+}
+.js .file-return:not(:empty):before {
+  content: "Выбран файл: ";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.user-images, #output {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  float: left;
+  margin-right: 10px;
+}
+
+.toggle-editor {
+  color: #003366;
+  font-size: 20px;
+  border: 1px solid #83baff;
+  border-radius: 10px;
+  display: block;
+  min-width: 35px;
+  height: 33px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-decoration: none;
+  padding: 1px 2px;
+  margin: auto 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.toggle-editor > i {
+  margin: auto;
+}
+
+#toggle-editor {
+  display: none;
+  cursor: pointer;
+}
+
+.btn-group > .btn:before, .btn-group > .btn:after, .toggle-editor:before, .toggle-editor:after{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: .4s ease-in-out;
+  -o-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.btn-group > .btn:before, .toggle-editor:before{
+  content: attr(data-tooltip);
+  width: auto;
+  min-width: 100px;
+  padding: 0 10px;
+  height: 32px;
+  line-height: 30px;
+  color: #003366;
+  border-radius: 5px;
+  border: 1px dotted #003366;
+  margin: -40px 0 0 -3px;
+  text-align: center;
+  overflow: hidden;
+  background-color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-group > .btn:after, .toggle-editor:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-top-color: #003366;
+  margin: -8px 0 0 10px;
+}
+.btn-group > .btn:hover:before, .btn-group > .btn:hover:after, .toggle-editor:hover:before, .toggle-editor:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
