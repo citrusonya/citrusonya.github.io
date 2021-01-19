@@ -119,21 +119,21 @@ let timeoutID;  // automatic slide change
 //
 
 let data = Array.from(document.querySelectorAll('.worksBlock .worksBlock__item')),
-    step = 6,
+    step = 12,
     item = 0;
 
 
 data.slice(step).forEach(e => e.style.display = 'none');
-item += step;
+item += (step / 2);
   
 document.querySelector('#loadmore').addEventListener('click', function(e){
   let tmp = data.slice(item, item + step);
 
   tmp.forEach(e => e.style.display = 'block');
-  item += step;
+  item += (step / 2);
   let animation = document.querySelector('.worksBlock');
   
-  if(tmp.length < 6){
+  if(tmp.length < 12){
     this.remove();
   }
 });
