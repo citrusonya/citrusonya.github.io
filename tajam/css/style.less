@@ -486,7 +486,7 @@ button, .clients__partner, .link {
 #wrapper {
   width: 3200px;
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   -webkit-transition: -webkit-transform .5s ease-in-out;
   transition: -webkit-transform .5s ease-in-out;
   -o-transition: transform .5s ease-in-out;
@@ -634,7 +634,9 @@ button, .clients__partner, .link {
 
 .content__box {
   padding-bottom: 7px;
-  flex:1 1 33.33%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 33.33%;
+  flex: 1 1 33.33%;
 	min-width: 250px;
 
   &.content__box_web {
@@ -684,6 +686,8 @@ button, .clients__partner, .link {
 }
 
 .content__box_worked {
+  -webkit-box-flex:1;
+  -ms-flex:1 1 25%;
   flex:1 1 25%;
 	min-width: 250px;
 }
@@ -707,6 +711,7 @@ button, .clients__partner, .link {
   height: 224px;
   border: 1px solid #e0e0e0;
   border-collapse: collapse;
+  -webkit-filter: grayscale(0.7);
   filter: grayscale(0.7);
   overflow: hidden;
 
@@ -721,15 +726,19 @@ button, .clients__partner, .link {
     height: 0;
     background: rgba(0,0,0,.2);
     border-radius: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     opacity: 0;
   }
 
   &:hover {
+    -webkit-animation: color ease-in-out 0.85s forwards;
     animation: color ease-in-out 0.85s forwards;
   }
 
   &:hover::before {
+    -webkit-animation: circle 0.85s;
     animation: circle 0.85s;
   }
 
@@ -743,32 +752,26 @@ button, .clients__partner, .link {
 }
 
 
+@-webkit-keyframes color {
+	0% {  -webkit-filter: grayscale(.8);  filter: grayscale(.8);  }
+	40% { -webkit-filter: grayscale(.5); filter: grayscale(.5);  }
+	100% {  -webkit-filter: grayscale(0);  filter: grayscale(0); }
+}
 @keyframes color {
-	0% {
-		filter: grayscale(.8);
-	}
-	40% {
-		filter: grayscale(.5);
-	}
-	100% {
-		filter: grayscale(0);
-	}
+	0% {  -webkit-filter: grayscale(.8);  filter: grayscale(.8);  }
+	40% { -webkit-filter: grayscale(.5); filter: grayscale(.5);  }
+	100% {  -webkit-filter: grayscale(0);  filter: grayscale(0); }
+}
+
+@-webkit-keyframes circle {
+	0% {  opacity: .5;  background: rgba(213, 186, 34, 0.3);  }
+	40% { opacity: 1; background: rgba(59, 49, 148, 0.3); }
+	100% {  width: 200%; height: 200%; opacity: 0;  }
 }
 @keyframes circle {
-	0% {
-		opacity: .5;
-    background: rgba(213, 186, 34, 0.3);
-    
-	}
-	40% {
-		opacity: 1;
-    background: rgba(59, 49, 148, 0.3);
-	}
-	100% {
-		width: 200%;
-		height: 200%;
-		opacity: 0;
-	}
+	0% {  opacity: .5; background: rgba(213, 186, 34, 0.3); }
+	40% { opacity: 1; background: rgba(59, 49, 148, 0.3); }
+	100% {  width: 200%; height: 200%; opacity: 0;  }
 }
 
 .content__box__names {
@@ -797,6 +800,8 @@ button, .clients__partner, .link {
 }
 
 .worksBlock__item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 10%;
   flex: 0 1 10%;
   width: 267px;
   height: 200px;
@@ -902,12 +907,18 @@ button, .clients__partner, .link {
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     &:hover {
+      -webkit-transform: scale(1.4);
+      -ms-transform: scale(1.4);
       transform: scale(1.4);
     }
   }
 }
 
-.dots__dot_active { transform: scale(1.4)  }
+.dots__dot_active { 
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);  
+}
 
 .dots__dot_1 {  background: url(../img/employee1.png) }
 
@@ -942,11 +953,15 @@ button, .clients__partner, .link {
 }
 
 .slider__control_left {
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
   transform: rotate(-135deg);
   left: calc(50% - 200px);
 }
 
 .slider__control_right {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   right: calc(50% - 200px);
 }
@@ -1005,7 +1020,8 @@ button {
   }
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 224, 208, 0.3);;
+    -webkit-box-shadow: 0 0 0 3px rgba(0, 224, 208, 0.3);
+    box-shadow: 0 0 0 3px rgba(0, 224, 208, 0.3);
   }
 }
 
@@ -1142,7 +1158,7 @@ button {
 .clients__partner_05, .clients__partner_06, 
 .clients__partner_07, .clients__partner_08,
 .clients__partner_09, .clients__partner_10 {
-  @media only screen and (max-width : 533px)  {background-size: 100%;}
+  @media only screen and (max-width : 533px)  { background-size: 100%;  }
 }
 
 .point {
@@ -1191,33 +1207,19 @@ button {
   margin-top: 23px;
   margin-left: 4px;
 
-  &.link_dribbble {
-    .sprite(-2px, -2px, 35px, 35px);
-  }
+  &.link_dribbble { .sprite(-2px, -2px, 35px, 35px);  }
 
-  &.link_facebook {
-    .sprite(-41px, -2px, 35px, 35px);
-  }
+  &.link_facebook { .sprite(-41px, -2px, 35px, 35px); }
 
-  &.link_gplus {
-    .sprite(-2px, -41px, 35px, 35px);
-  }
+  &.link_gplus {  .sprite(-2px, -41px, 35px, 35px); }
 
-  &.link_instagram {
-    .sprite(-41px, -41px, 35px, 35px);
-  }
+  &.link_instagram {  .sprite(-41px, -41px, 35px, 35px);  }
 
-  &.link_twitter {
-    .sprite(-80px, -2px, 35px, 35px);
-  }
+  &.link_twitter {  .sprite(-80px, -2px, 35px, 35px); }
 
-  &.link_youtube {
-    .sprite(-80px, -41px, 35px, 35px);
-  }
+  &.link_youtube {  .sprite(-80px, -41px, 35px, 35px);  }
 
-  &:hover {
-    background-color: #13102D;
-  }
+  &:hover { background-color: #13102D;  }
 }
 
 footer {

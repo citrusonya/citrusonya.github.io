@@ -776,6 +776,8 @@ button,
 }
 .content__box {
   padding-bottom: 7px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 33.33%;
   flex: 1 1 33.33%;
   min-width: 250px;
 }
@@ -860,6 +862,8 @@ button,
   margin-bottom: 57px;
 }
 .content__box_worked {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 25%;
   flex: 1 1 25%;
   min-width: 250px;
 }
@@ -875,6 +879,7 @@ button,
   height: 224px;
   border: 1px solid #e0e0e0;
   border-collapse: collapse;
+  -webkit-filter: grayscale(0.7);
   filter: grayscale(0.7);
   overflow: hidden;
 }
@@ -889,13 +894,17 @@ button,
   height: 0;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   opacity: 0;
 }
 .worked:hover {
+  -webkit-animation: color ease-in-out 0.85s forwards;
   animation: color ease-in-out 0.85s forwards;
 }
 .worked:hover::before {
+  -webkit-animation: circle 0.85s;
   animation: circle 0.85s;
 }
 .worked.worked_01 {
@@ -918,15 +927,47 @@ button,
   width: 215px;
   height: 224px;
 }
-@keyframes color {
+@-webkit-keyframes color {
   0% {
+    -webkit-filter: grayscale(0.8);
     filter: grayscale(0.8);
   }
   40% {
+    -webkit-filter: grayscale(0.5);
     filter: grayscale(0.5);
   }
   100% {
+    -webkit-filter: grayscale(0);
     filter: grayscale(0);
+  }
+}
+@keyframes color {
+  0% {
+    -webkit-filter: grayscale(0.8);
+    filter: grayscale(0.8);
+  }
+  40% {
+    -webkit-filter: grayscale(0.5);
+    filter: grayscale(0.5);
+  }
+  100% {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+}
+@-webkit-keyframes circle {
+  0% {
+    opacity: 0.5;
+    background: rgba(213, 186, 34, 0.3);
+  }
+  40% {
+    opacity: 1;
+    background: rgba(59, 49, 148, 0.3);
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
   }
 }
 @keyframes circle {
@@ -971,6 +1012,8 @@ button,
   }
 }
 .worksBlock__item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 10%;
   flex: 0 1 10%;
   width: 267px;
   height: 200px;
@@ -1092,9 +1135,13 @@ button,
   transition: all 0.2s ease-in-out;
 }
 .dots .dots__dot:hover {
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
   transform: scale(1.4);
 }
 .dots__dot_active {
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
   transform: scale(1.4);
 }
 .dots__dot_1 {
@@ -1134,10 +1181,14 @@ button,
   border-color: #00e0d0;
 }
 .slider__control_left {
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
   transform: rotate(-135deg);
   left: calc(50% - 200px);
 }
 .slider__control_right {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   right: calc(50% - 200px);
 }
@@ -1209,6 +1260,7 @@ button:hover {
 }
 button:focus {
   outline: none;
+  -webkit-box-shadow: 0 0 0 3px rgba(0, 224, 208, 0.3);
   box-shadow: 0 0 0 3px rgba(0, 224, 208, 0.3);
 }
 .submit {
