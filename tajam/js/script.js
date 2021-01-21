@@ -2,15 +2,14 @@
 //  menu burger
 //
 
-let trigger = document.getElementById("conteiner__nav__bar");
-trigger.addEventListener("click", showMenu);
+const nav = document.querySelector("#nav_links"),
+      navLinks = [...document.querySelectorAll(".scroll")],
+      menuBtn = document.querySelector("#nav__bars");
 
-function showMenu() {
-  let menu = document.getElementById("conteiner__nav_link");
-  menu.style.width = "65px";
-  menu.classList.toggle("open");
-  trigger.classList.toggle("change");
-}
+menuBtn.addEventListener("click", function() {
+  nav.classList.toggle("open");
+  menuBtn.classList.toggle("move");
+});
 
 //
 //  slider header
