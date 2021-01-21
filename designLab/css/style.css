@@ -505,7 +505,7 @@ footer {
   content: '';
   position: absolute;
   top: -2px;
-  width: 242.5px;
+  width: 243.5px;
   height: 2px;
   background: #3c3c3c;
 }
@@ -573,13 +573,13 @@ footer {
 .container__services::before,
 .container__whatwedo::before,
 .container__contact::before {
-  left: 0;
+  left: -2px;
 }
 .container__about::after,
 .container__services::after,
 .container__whatwedo::after,
 .container__contact::after {
-  right: 0;
+  right: -2px;
 }
 .container__about {
   min-height: 312px;
