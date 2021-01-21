@@ -453,6 +453,9 @@ header {
   height: 2px;
   background-color: white;
   margin: 5px 0;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 main,
 .conteiner,
