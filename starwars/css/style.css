@@ -626,16 +626,16 @@ button:focus {
   }
 }
 #read-more::before {
-  left: -545px;
+  left: -545.5px;
 }
 @media only screen and (max-width: 1366px) {
   #read-more::before {
-    left: -324px;
+    left: -323.5px;
   }
 }
 @media only screen and (max-width: 1024px) {
   #read-more::before {
-    left: -174px;
+    left: -173.5px;
   }
 }
 @media only screen and (max-width: 620px) {
@@ -644,16 +644,16 @@ button:focus {
   }
 }
 #read-more::after {
-  right: -545px;
+  right: -545.5px;
 }
 @media only screen and (max-width: 1366px) {
   #read-more::after {
-    right: -323px;
+    right: -323.5px;
   }
 }
 @media only screen and (max-width: 1024px) {
   #read-more::after {
-    right: -173px;
+    right: -173.5px;
   }
 }
 @media only screen and (max-width: 620px) {
