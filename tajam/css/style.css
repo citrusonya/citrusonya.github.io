@@ -201,7 +201,7 @@ h1.no-uppercase {
 }
 @media only screen and (max-width: 640px) {
   h1.no-uppercase {
-    width: 250px;
+    width: 270px;
   }
 }
 @media only screen and (max-width: 380px) {
