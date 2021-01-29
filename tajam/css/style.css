@@ -204,6 +204,11 @@ h1.no-uppercase {
     width: 250px;
   }
 }
+@media only screen and (max-width: 380px) {
+  h1.no-uppercase {
+    font-size: 30px;
+  }
+}
 p {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
