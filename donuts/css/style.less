@@ -53,13 +53,12 @@ body {
   display: block;
   width: 100%;
   height: 100%;
+  min-height: 709px;
   font-family: 'Open Sans', sans-serif;
   background: url(../img/vectorObject.png), url(../img/background.png);
   background-repeat: no-repeat, no-repeat;
   background-size: 100%, cover;
   overflow-x: hidden;
-  -webkit-backdrop-filter: saturate(150%);
-  backdrop-filter: saturate(150%);
   background-color: @white;
   margin: 0 auto;
 }
@@ -262,6 +261,7 @@ header {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  min-height: 109px;
   .signUp {
     .alignment_header();
     background: url(../img/user_icon.png) no-repeat 0 0px;
@@ -389,15 +389,16 @@ header {
   color: @white;
   position: relative;
   z-index: 15;
-  top: 45%;
-  @media only screen and (max-width : 1920px) { top: 295px;  }
-  @media only screen and (max-width : 1366px) { top: 150px;  }
-  @media only screen and (max-width : 1040px) { top: 50px; }
-  @media only screen and (max-width : 360px)  { top: 20px; }
+  padding-top: 45%;
+  min-height: 600px;
+  @media only screen and (max-width : 1920px) { padding-top: 295px;  }
+  @media only screen and (max-width : 1366px) { padding-top: 150px;  }
+  @media only screen and (max-width : 1040px) { padding-top: 50px; }
+  @media only screen and (max-width : 360px)  { padding-top: 20px; }
   .main__content {
     position: absolute;
     right: 20%;
-    background-color: rgba(247, 130, 175, 0.4);
+    background-color: rgba(237, 143, 193, 0.4);
     border-radius: 10px;
     width: 550px;
     display: -webkit-box;
@@ -467,7 +468,7 @@ header {
 
 footer {
   display: block;
-  position: absolute;
+  position: relative;
   width: 100%;
   font-weight: bold;
   color: @color;
@@ -477,9 +478,12 @@ footer {
     text-align: right;
     font-size: 18px;
     margin-top: 48.5px;
+
+    @media only screen and (max-width : 533px)  {  font-size: 14px; text-align: center; }
     .copyright {
       padding-right: 27px;
       letter-spacing: 0.2px;
+      @media only screen and (max-width : 533px)  {  padding: 0; margin: auto; }
     }
   }
 }
