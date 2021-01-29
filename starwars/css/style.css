@@ -1044,6 +1044,11 @@ button:focus {
   padding: 0 15%;
   padding-top: 82px;
 }
+@media only screen and (max-width: 533px) {
+  .wrapper {
+    padding-top: 20px;
+  }
+}
 .reviews {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1069,6 +1074,11 @@ button:focus {
     min-height: 300px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 533px) {
+  .reviews {
+    margin: 40px auto;
   }
 }
 .reviews:nth-child(2n) {
