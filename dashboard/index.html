@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description of page content">
+    <meta name="author" content="citrusonya"/>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo_active.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="dashboard">
+        <div class="dashboard-sidebar">
+            <header><div><a href="https://github.com/citrusonya/citrusonya.github.io" target="_blank"></a></div></header>
+            <div class="dashboard-nav">
+                <div data-link-id="profile" class="link profile"></div>
+                <div data-link-id="heart" class="link heart active"></div>
+                <div data-link-id="activity" class="link activity"></div>
+                <div data-link-id="settings" class="link settings"></div>
+                <div data-link-id="health" class="link health"></div>
+            </div>
+            <footer><div><a href="#"></a></div></footer>
+        </div>
+        <div class="dashboard-content active">
+            <div data-content-id="profile" class="dashboard-block dashboard-block_profile">
+                <div>
+                    <h3>Profile photo:</h3>
+                    <img src="img/photo.jpg">
+                </div>
+                <div>
+                    <h3>Name</h3>
+                    <span>Daniel Craig</span>
+                </div>
+                <div>
+                    <h3>ID</h3>
+                    <span>8469275314</span>
+                </div>
+                <div>
+                    <h3>Sex</h3>
+                    <span>male</span>
+                </div>
+                <div>
+                    <h3>Date of birth</h3>
+                    <span>2 March</span>
+                </div>
+                <div>
+                    <h3>Height</h3>
+                    <span>174 cm</span>
+                </div>
+                <div>
+                    <h3>Weight</h3>
+                    <span>86 kg</span>
+                </div>
+                <button>Edit profile</button>
+            </div>
+            <div data-content-id="heart" class="dashboard-block dashboard-block_heart active">
+                <div class="row row_heart">
+                    <div class="row__preview">
+                        <div class="row__preview_photo"></div>
+                        <p class="row__client-name">Daniel Craig</p>
+                        <p class="row__client-status">Actor</p>
+                    </div>
+                    <div id="health-col" class="row__col_1 active">My health</div>
+                    <div id="activity-col" class="row__col_1">My activity</div>
+                </div>
+                <div id="health-col" class="table active">
+                    <div class="col">
+                        <h3>Temperature</h3>
+                        <p>36.6<span> °C</span></p>
+                    </div>
+                    <div class="col">
+                        <h3>Heart rate</h3>
+                        <p>110<span> bpm</span></p>
+                    </div>
+                    <div class="col">
+                        <h3>Blood presure</h3>
+                        <p>120/90</p>
+                    </div>
+                    <div class="col">
+                        <h3>Calories per week</h3>
+                        <p>1540</p>
+                    </div>
+                    <div class="row row_counter">
+                        <p class="row__count">89 <span>kg</span></p>
+                        <svg>
+                            <circle class="row__bar" cx="62" cy="62" r="58"></circle>
+                            <circle class="row__progress row__progress_health row__progress_health-move" cx="62" cy="62" r="58"></circle>
+                        </svg>
+                        <label class="checkbox checkbox_activity">
+                            <input type="checkbox" id="add-activity">
+                            <span>My activity</span>
+                        </label>
+                    </div>
+                </div>
+                <div id="activity-col" class="table">
+                    <div class="col">
+                        <h3>Steps per day</h3>
+                        <p>3967</p>
+                    </div>
+                    <div class="col">
+                        <h3>Calories per day</h3>
+                        <p>486</p>
+                    </div>
+                    <div class="col">
+                        <h3>Walking</h3>
+                        <p>3,5<span> km</span></p>
+                    </div>
+                    <div class="col">
+                        <h3>Running</h3>
+                        <p>0,2<span> km</span></p>
+                    </div>
+                    <div class="row row_counter">
+                        <p class="row__count">6,9 <span>hr</span></p>
+                        <svg>
+                            <circle class="row__bar" cx="62" cy="62" r="58"></circle>
+                            <circle class="row__progress row__progress_activity row__progress_activity-move" cx="62" cy="62" r="58"></circle>
+                        </svg>
+                        <h2>Sleep amount</h2>
+                    </div>
+                </div>
+
+            </div>
+            <div data-content-id="activity" class="dashboard-block dashboard-block_activity">
+                <div class="row row_activity">
+                    <div id="steps-col" class="row__col_2 active"><i class="far fa-sun"></i>Activity</div>
+                    <div id="sleep-col" class="row__col_2"><i class="fas fa-moon"></i>Sleep</div>
+                </div>
+                <div id="steps-col" class="item active">
+                    <p class="dashboard-block__text_1">Track our activity trend to understand how new habits influence your life.</p>
+                    <div class="col">
+                        <h3>Steps</h3>
+                        <p>3967<span> steps</span></p>
+                    </div>
+                    <div class="col">
+                        <h3>Distance</h3>
+                        <p>3,5<span> km</span></p>
+                    </div>
+                    <div class="col">
+                        <h3>Calories burned</h3>
+                        <p>486<span> cals</span></p>
+                    </div>
+                    <div class="col">
+                        <h3>Active minutes</h3>
+                        <p>30<span> min</span></p>
+                    </div>
+                    <div class="col">
+                        <h3>Floors climbed</h3>
+                        <p>2<span> floors</span></p>
+                    </div>
+                    <div class="col">
+                        <h3>Hourly activity goal</h3>
+                        <p>9<span> hr/day</span></p>
+                    </div>
+                    <p class="dashboard-block__text_1">To get goal done, you need to walk and run further than you did recently. You can do it, Daniel!</p>
+                </div>
+                <div id="sleep-col" class="item">
+                    <p class="dashboard-block__text_1">Track our sleep trend to understand how new habits influence your sleep.</p>
+                    <h2>Sleep goal</h2>
+                    <p class="dashboard-block__text_2">You achieved 76% of your sleep goal. This is 17% lower than in the previus day.</p>
+                    <span>You need to sleep longer to reach your daily goal. Remember that sleep boosts your immune system, manages wight loss, and helps you retain memory.</span>
+                    <h2>Awake minutes</h2>
+                    <p class="dashboard-block__text_2">Your average awake duration during the sleep is 22 minutes. This is 62% lower than in the previous day.</p>
+                    <span>It's normal to see awake minutes in your sleep stages. Studies have shown a tipical adult could wake up briefly between 10-30 times per night.</span>
+                    <h2>Average heart rate</h2>
+                    <p class="dashboard-block__text_2">Your average heart rate during the sleep is 52 BPM. This is 1% lower than in the previus day.</p>
+                    <span>During sleep a slow heartbeat with rates around 40-60 bpm is common and is considered normal.</span>
+                </div>
+            </div>
+            <div data-content-id="settings" class="dashboard-block dashboard-block_setting">
+                <div>
+                    <input class="dashboard-block__checkbox" type="checkbox">
+                    <h1>Allow Notifications</h1>
+                    <h1>Send to Notification Center</h1>
+                    <h1>Notification</h1>
+                    <input class="dashboard-block__check" type="checkbox" checked>
+                </div>
+                <div>
+                    <h2>Stand Reminders</h2>
+                    <input class="dashboard-block__switch" type="checkbox" checked>
+                    <p>Receive a reminder to stand if you’ve been sitting for the first 50 minutes of an hour.</p>
+                </div>
+                <div>
+                    <h2>Daily Coaching</h2>
+                    <input class="dashboard-block__switch" type="checkbox" checked>
+                    <p>Get notifications that help you complete your Activity goals and Monthly Challenges.</p>
+                </div>
+                <div>
+                    <h2>Goal Completions</h2>
+                    <input class="dashboard-block__switch" type="checkbox">
+                    <p>Receive a notifications when you reach your Move, Exercise, and Stand goals or earn an award.</p>
+                </div>
+                <div>
+                    <h2>Special Challenge</h2>
+                    <input class="dashboard-block__switch" type="checkbox">
+                    <p>Get notifications about limited edition awards you can earn by completing a challenge.</p>
+                </div>
+            </div>
+            <div data-content-id="health" class="dashboard-block dashboard-block_health">
+                <h2>Heart rate today</h2>
+                <div class="table">
+                    <div class="col">
+                        <h3>Relaxed</h3>
+                        <p>15,1<span> hr</span></p>
+                    </div>
+                    <div class="col">
+                        <h3>Intensive</h3>
+                        <p>3,4<span> hr</span></p>
+                    </div>
+                    <div class="col">
+                        <h3>Aerobic</h3>
+                        <p>0<span> min</span></p>
+                    </div>
+                    <div class="col">
+                        <h3>Anaerobic</h3>
+                        <p>0<span> min</span></p>
+                    </div>
+                    <div class="col">
+                        <h3>Maximum heart rate</h3>
+                        <p>111</p>
+                    </div>
+                    <div class="col">
+                        <h3>Minimum heart rate</h3>
+                        <p>51</p>
+                    </div>
+                    <h2>Continuous heart rate zone</h2>
+                    <svg class="dashboard-block_health-bars">
+                        <g>
+                            <line x1="25" x2="225" y1="20" y2="20"/>
+                            <line x1="25" x2="155" y1="20" y2="20"/>
+                            <line x1="25" x2="45" y1="20" y2="20"/>
+                        </g>
+                    </svg>
+                    <div class="col col_health col_health-1"><h3>Relaxed</h3><div></div></div>
+                    <div class="col col_health col_health-2"><h3>Intensive</h3><div></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-panel">
+            <div class="dashboard-panel__conteiner dashboard-panel__conteiner_header">
+                <h1>Intervals</h1>
+                <p>Typical statistics for Daniel Craig</p>
+                <div class="dashboard-panel__navigation">
+                    <div class="dashboard-panel__multiselect">
+                        <div id="selectBox">
+                            <p>Days &nbsp; <span class="dashboard-panel__arrow"></span></p>
+                          <div class="dashboard-panel__overSelect"></div>
+                        </div>
+                        <div id="checkboxes">
+                          <label><input type="checkbox" id="one">20 Jan</label>
+                          <label><input type="checkbox" id="two">21 Jan</label>
+                          <label><input type="checkbox" id="three">22 Jan</label>
+                        </div>
+                    </div>
+                    <input type="button" class="dashboard-panel__button_1">
+                    <input type="button" class="dashboard-panel__button_2">
+                    <input type="button" class="dashboard-panel__button_3">
+                </div>
+            </div>
+            <div class="dashboard-panel__conteiner dashboard-panel__conteiner_graph">
+                <div class="dashboard-panel__chart">
+                    <span class="dashboard-panel__line">Average steps</span>
+                    <span class="dashboard-panel__line">Goal</span>
+                    <div class="dashboard-panel__bars">
+                        <div class="dashboard-panel__bar"><span>12 Jan</span></div>
+                        <div class="dashboard-panel__bar"><span>13 Jan</span></div>
+                        <div class="dashboard-panel__bar"><span>12 Jan</span></div>
+                        <div class="dashboard-panel__bar"><span>13 Jan</span></div>
+                        <div class="dashboard-panel__bar"><span>14 Jan</span></div>
+                        <div class="dashboard-panel__bar"><span>15 Jan</span></div>
+                        <div class="dashboard-panel__bar"><span>16 Jan</span></div>
+                        <div class="dashboard-panel__bar"><span>17 Jan</span></div>
+                        <div class="dashboard-panel__bar"><span>18 Jan</span></div>
+                        <div class="dashboard-panel__bar"><span>19 Jan</span></div>
+                        <div class="dashboard-panel__bar"><span>20 Jan</span></div>
+                        <div class="dashboard-panel__bar"><span>21 Jan</span></div>
+                        <div class="dashboard-panel__bar"><span>22 Jan</span></div>
+                        <div class="dashboard-panel__bar"><span>23 Jan</span></div>
+                        <div class="dashboard-panel__bar"><span>24 Jan</span></div>
+                        <div class="dashboard-panel__bar"><span>25 Jan</span></div>
+                        <div class="dashboard-panel__bar"><span>26 Jan</span></div>
+                    </div>
+                </div>
+                <svg viewBox="0 0 842 480" class="dashboard-panel__svg-container">
+                    <g id='chart-container'></g>
+                    <rect class='dashboard-panel__overlay-border'/>
+                    <g class="svg-legend">
+                        <text x="84" y="502">23 Jan</text>
+                        <text x="304" y="502">24 Jan</text>
+                        <text x="512" y="502">25 Jan</text>
+                        <text x="716" y="502">26 Jan</text>
+                    </g>
+                    <g render-order="5" id="open-tooltip-activity" class="open-tooltip open-tooltip-1 active">
+                        <circle id="pointA" class="svg-tooltip" cx="123" cy="381" r="10"></circle>
+                        <circle id="pointA" class="svg-tooltip" cx="123" cy="381" r="2.5"></circle>
+                    </g>
+                    <g render-order="5" id="open-tooltip-water" class="open-tooltip open-tooltip-2">
+                        <circle id="pointB" class="svg-tooltip" cx="493" cy="337" r="10"></circle>
+                        <circle id="pointB" class="svg-tooltip" cx="493" cy="337" r="2.5"></circle>
+                    </g>
+                  </svg>
+                <div class="dashboard-panel__tooltip dashboard-panel__tooltip_1">
+                    <div><p>220</p><p>Burned Calories</p></div>
+                    <div><p>40</p><p>Cardio tracker</p></div>
+                </div>
+                <div class="dashboard-panel__tooltip dashboard-panel__tooltip_2">
+                    <div><p>880</p><p>Consumed water, ml</p></div>
+                    <div><p>time</p><p>To drink some water</p></div>
+                </div>
+            </div>
+            <div class="dashboard-panel__conteiner dashboard-panel__conteiner_footer">
+                <div class="dashboard-panel__index steps"><i class="fas fa-running"></i>
+                    <h1>Step Counter</h1>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <label class="checkbox checkbox_add">
+                        <input type="checkbox" id="add-steps" checked>
+                        <span>Check</span>
+                    </label>
+                </div>
+                <div class="dashboard-panel__index puls">
+                    <h1>Puls tracker</h1>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <label class="checkbox checkbox_add">
+                        <input type="checkbox" id="add-puls">
+                        <span>Check</span>
+                    </label>
+                </div>
+                <div class="dashboard-panel__index water">
+                    <h1>Water level</h1>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <label class="checkbox checkbox_add">
+                        <input type="checkbox" id="add-water">
+                        <span>Check</span>
+                    </label>
+                </div>
+                <div class="dashboard-panel__advertising">
+                    <div class="dashboard-panel__advertising_link"><a href="https://www.nike.com" target="_blank"></a><img src="img/nike_shoe.png" alt="nike shoe"></div>
+                    <h1>Equipment</h1>
+                    <p>You need to upgrade your Equipment
+                        <a href="https://www.nike.com" target="_blank" class="btn">Up grade</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
