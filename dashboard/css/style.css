@@ -153,7 +153,7 @@ body {
   display: flex;
   width: 1247px;
   height: 875px;
-  margin: auto;
+  margin: 25px auto 0 auto;
   position: relative;
   overflow: hidden;
   border-radius: 20px;
