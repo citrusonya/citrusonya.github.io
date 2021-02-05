@@ -14,3 +14,5 @@ https://citrusonya.github.io/tajam/
 https://citrusonya.github.io/designLab/
 
 https://citrusonya.github.io/starwars/
+
+https://citrusonya.github.io/dashboard/
