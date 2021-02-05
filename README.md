@@ -17,4 +17,6 @@ Chronology of my works:
 
 [dashboard](https://citrusonya.github.io/dashboard/)
 
-Images of templates can be viewed here [here](https://github.com/citrusonya/citrusonya.github.io/tree/master/template%20images)
+Images of templates can be viewed here [here](https://github.com/citrusonya/citrusonya.github.io/tree/master/template%20images).
+
+If you need PSD template, write your e-mail, and name of the template [here](https://github.com/citrusonya/citrusonya.github.io/issues).
