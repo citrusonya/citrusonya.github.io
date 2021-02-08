@@ -3,16 +3,20 @@ Hi, my name is Sasha, in this repository you can see my first works in the field
 
 Chronology of my works:
 
-https://hatium.ru
+[hatium](https://hatium.ru)
 
-https://citrusonya.github.io/donuts/
+[donuts](https://citrusonya.github.io/donuts/)
 
-https://citrusonya.github.io/editor/
+[editor](https://citrusonya.github.io/editor/) (Desktop site)
 
-https://citrusonya.github.io/tajam/
+[tajam](https://citrusonya.github.io/tajam/)
 
-https://citrusonya.github.io/designLab/
+[design lab](https://citrusonya.github.io/designLab/)
 
-https://citrusonya.github.io/starwars/
+[star wars](https://citrusonya.github.io/starwars/)
 
-https://citrusonya.github.io/dashboard/
+[dashboard](https://citrusonya.github.io/dashboard/) (Desktop site)
+
+Images of templates can be viewed [here](https://github.com/citrusonya/citrusonya.github.io/tree/master/template%20images).
+
+If you need PSD template, write your e-mail, and name of the template [here](https://github.com/citrusonya/citrusonya.github.io/issues).
