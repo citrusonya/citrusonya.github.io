@@ -46,14 +46,8 @@ h1, h2, h3, a, button, input, img {
 	user-select: none;
 }
 
-a, .link, input[type="button"],
-.checkbox, #checkboxes label, #selectBox,
-.row__col_1, .row__col_2,
-input[type="checkbox"], button {
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+a, .link, input, .checkbox, #checkboxes label, 
+#selectBox, .row__col_1, .row__col_2, button {
 	cursor: pointer;
 }
 
@@ -66,6 +60,9 @@ input[type="checkbox"], button {
 @green: #79D09F;
 @white: #ffffff;
 @grey: #BCBCBC;
+@light-blue: #6FC0F9;
+@navy-blue: #4e84ef;
+@border-blue: #88D1FD;
 
 .hover(){
 	color: @green;
@@ -142,9 +139,9 @@ input[type="checkbox"], button {
 	flex-direction: column;
 }
 
-.flex-flow() {
-	-ms-flex-flow: row wrap;
-    flex-flow: row wrap;
+.flex-flow(@wrap) {
+	-ms-flex-flow: row @wrap;
+    flex-flow: row @wrap;
 }
 
 .flex-basis(@var) {
@@ -274,7 +271,7 @@ footer {
 	position: relative;
 	height: 875px;
 	display: none;
-	background-color: #6FC0F9;
+	background-color: @light-blue;
 
 	h2 {
 		font-size: 15px;
@@ -303,7 +300,7 @@ footer {
 	}
 
 	&.dashboard-block_heart {
-		.flex-flow();
+		.flex-flow(wrap);
 
 		&.active {
 			.display-flex();
@@ -314,9 +311,9 @@ footer {
 		.flex-basis(307px);
 
 		&.row_heart, &.row_activity {
-			.linear-gradient-to-bottom(rgb(111,192,249), rgb(78,132,239));
+			.linear-gradient-to-bottom(@light-blue, @navy-blue);
 			.display-flex();
-			.flex-flow();
+			.flex-flow(wrap);
 			-webkit-box-pack: center;
 	    	-ms-flex-pack: center;
 	        justify-content: center;
@@ -344,11 +341,11 @@ footer {
 
 .dashboard-block_profile {
 
-	.linear-gradient-to-bottom(rgb(111,192,249), rgb(78,132,239));
+	.linear-gradient-to-bottom(@light-blue, @navy-blue);
 
 	div {
 		display: block;
-		border-bottom: 1px solid #88D1FD;
+		border-bottom: 1px solid @border-blue;
 		padding: 20px 30px;
 	}
 
@@ -390,13 +387,13 @@ footer {
 
 .table {
 	width: 309px;
-	.flex-flow();
+	.flex-flow(wrap);
 	position: relative;
 	display: none;
 
 	&.active {
 		.display-flex();
-		.flex-flow();
+		.flex-flow(wrap);
 		width: 309px;
 		position: relative;
 	}
@@ -413,8 +410,8 @@ footer {
 
 .col:not(.col_health) {
 	height: 153.5px;
-	border-right: 1px solid #88D1FD;
-	border-bottom: 1px solid #88D1FD;
+	border-right: 1px solid @border-blue;
+	border-bottom: 1px solid @border-blue;
 }
 
 .row__preview {
@@ -466,12 +463,12 @@ footer {
 	&.active {
 
 		.fa-sun {
-			text-shadow: rgb(255, 255, 255) 1px 0 10px;
+			color: rgb(255, 255, 95);
+			text-shadow: rgb(255, 255, 95) 1px 0 10px;
 		}
 
 		.fa-moon {
-			color: rgb(255, 255, 95);
-			text-shadow: rgb(255, 255, 95) 1px 0 10px;
+			text-shadow: @white 1px 0 10px;
 		}
 	}
 }
@@ -597,7 +594,7 @@ to {	stroke-dashoffset: 133;	}
 
 		&.active {
 			.display-flex();
-			.flex-flow();
+			.flex-flow(wrap);
 		}
 	}
 
@@ -607,13 +604,13 @@ to {	stroke-dashoffset: 133;	}
 	
 	div {
 		display: block;
-		border-bottom: 1px solid #88D1FD;
+		border-bottom: 1px solid @border-blue;
 		padding: 20px 30px;
 		height: 120px;
-		background-color: #6FC0F9;
+		background-color: @light-blue;
 
 		&:nth-child(1) {
-			.linear-gradient-to-bottom(rgb(111,192,249), rgb(78,132,239));
+			.linear-gradient-to-bottom(@light-blue, @navy-blue);
 		}
 	}
 
@@ -646,7 +643,7 @@ to {	stroke-dashoffset: 133;	}
 	font-size: 15px;
 
 	&:nth-child(1) {
-		border-bottom: 1px solid #88D1FD;
+		border-bottom: 1px solid @border-blue;
 	}
 }
 
@@ -669,8 +666,8 @@ to {	stroke-dashoffset: 133;	}
 		font-weight: 200;
 
 		&:nth-child(1) {
-			border-bottom: 1px solid #88D1FD;
-			.linear-gradient-to-bottom(rgb(111,192,249), rgb(78,132,239));
+			border-bottom: 1px solid @border-blue;
+			.linear-gradient-to-bottom(@light-blue, @navy-blue);
 		}
 	}
 }
@@ -768,7 +765,7 @@ to {	stroke-dashoffset: 133;	}
 	padding: 0 30px;
 
 	&:not(:last-child){	
-		border-bottom: 1px solid #88D1FD;
+		border-bottom: 1px solid @border-blue;
 		padding-bottom: 20px;
 	}
 }
@@ -853,7 +850,7 @@ to {	stroke-dashoffset: 133;	}
 		display: block;
 		position: absolute;
 		left: 2px;
-		top: 3px;
+		top: calc(50% - 7.5px);
 		border-radius: 50%;
 		width: 15px;
 		height: 15px;
@@ -1181,7 +1178,7 @@ to {	stroke-dashoffset: 133;	}
 		}
 
 		&.line-water {
-			stroke: #6FC0F9;
+			stroke: @light-blue;
 			fill: rgba(111, 192, 249, 0);
 
 			&.draw {	
@@ -1203,7 +1200,7 @@ to {	stroke-dashoffset: 133;	}
 	left: 0;
 	fill: none;
 	stroke-width: 2;
-	stroke: rgb(255, 255, 255);
+	stroke: @white;
 	width: 843px;
 	height: 480px;
 }
@@ -1239,8 +1236,8 @@ to {	stroke-dashoffset: 133;	}
 	top: 2px;
 	border-radius: 3px;
 	pointer-events: none;
-	background: -o-radial-gradient(100px 340px,farthest-corner,rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
-	background: radial-gradient(farthest-corner at 100px 340px,rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+	background: -o-radial-gradient(100px 340px,farthest-corner,rgba(255, 255, 255, 0) 0%, @white 100%);
+	background: radial-gradient(farthest-corner at 100px 340px,rgba(255, 255, 255, 0) 0%, @white 100%);
 	z-index: 2;
 	opacity: 0;
 	transition: all 1s ease;
@@ -1313,9 +1310,9 @@ to {	stroke-dashoffset: 133;	}
 
 		.dashboard-panel__bar {
 
-			background: -webkit-gradient( linear, right top, left top, from(rgb(111,192,249)), to(rgb(78,132,239)));
-			background: -o-linear-gradient( right, rgb(111,192,249) 0%, rgb(78,132,239) 100%);
-			background: linear-gradient( to left, rgb(111,192,249) 0%, rgb(78,132,239) 100%);
+			background: -webkit-gradient( linear, right top, left top, from(@light-blue), to(@navy-blue));
+			background: -o-linear-gradient( right, @light-blue 0%, @navy-blue 100%);
+			background: linear-gradient( to left, @light-blue 0%, @navy-blue 100%);
 			border-radius: 4px;
 			margin: 2px 0;
 			height: 24px;
@@ -1384,8 +1381,7 @@ to {	stroke-dashoffset: 133;	}
 	height: 260px;
 	border-top: 1px solid #F3F3F3;
 	.display-flex();
-	-ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
+	.flex-flow(nowrap);
 	width: 1034px;
 	left: -224px;
 	.simple-transition(all, 1s);

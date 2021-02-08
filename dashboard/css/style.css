@@ -118,18 +118,13 @@ img {
 }
 a,
 .link,
-input[type="button"],
+input,
 .checkbox,
 #checkboxes label,
 #selectBox,
 .row__col_1,
 .row__col_2,
-input[type="checkbox"],
 button {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   cursor: pointer;
 }
 * {
@@ -364,9 +359,9 @@ footer div:hover {
 }
 .dashboard-block .row.row_heart,
 .dashboard-block .row.row_activity {
-  background: -webkit-gradient(linear, left top, left bottom, from(#6fc0f9), to(#4e84ef));
-  background: -o-linear-gradient(top, #6fc0f9 0%, #4e84ef 100%);
-  background: linear-gradient(to bottom, #6fc0f9 0%, #4e84ef 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#6FC0F9), to(#4e84ef));
+  background: -o-linear-gradient(top, #6FC0F9 0%, #4e84ef 100%);
+  background: linear-gradient(to bottom, #6FC0F9 0%, #4e84ef 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -396,9 +391,9 @@ footer div:hover {
   font-size: 21px;
 }
 .dashboard-block_profile {
-  background: -webkit-gradient(linear, left top, left bottom, from(#6fc0f9), to(#4e84ef));
-  background: -o-linear-gradient(top, #6fc0f9 0%, #4e84ef 100%);
-  background: linear-gradient(to bottom, #6fc0f9 0%, #4e84ef 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#6FC0F9), to(#4e84ef));
+  background: -o-linear-gradient(top, #6FC0F9 0%, #4e84ef 100%);
+  background: linear-gradient(to bottom, #6FC0F9 0%, #4e84ef 100%);
 }
 .dashboard-block_profile div {
   display: block;
@@ -516,11 +511,11 @@ footer div:hover {
   opacity: 1;
 }
 .row__col_2.active .fa-sun {
-  text-shadow: #ffffff 1px 0 10px;
-}
-.row__col_2.active .fa-moon {
   color: #ffff5f;
   text-shadow: #ffff5f 1px 0 10px;
+}
+.row__col_2.active .fa-moon {
+  text-shadow: #ffffff 1px 0 10px;
 }
 .row__count {
   position: absolute;
@@ -654,9 +649,9 @@ footer div:hover {
   background-color: #6FC0F9;
 }
 .dashboard-block_setting div:nth-child(1) {
-  background: -webkit-gradient(linear, left top, left bottom, from(#6fc0f9), to(#4e84ef));
-  background: -o-linear-gradient(top, #6fc0f9 0%, #4e84ef 100%);
-  background: linear-gradient(to bottom, #6fc0f9 0%, #4e84ef 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#6FC0F9), to(#4e84ef));
+  background: -o-linear-gradient(top, #6FC0F9 0%, #4e84ef 100%);
+  background: linear-gradient(to bottom, #6FC0F9 0%, #4e84ef 100%);
 }
 .dashboard-block_setting h1 {
   margin-bottom: 10px;
@@ -702,9 +697,9 @@ footer div:hover {
 }
 .dashboard-block_health h2:nth-child(1) {
   border-bottom: 1px solid #88D1FD;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6fc0f9), to(#4e84ef));
-  background: -o-linear-gradient(top, #6fc0f9 0%, #4e84ef 100%);
-  background: linear-gradient(to bottom, #6fc0f9 0%, #4e84ef 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#6FC0F9), to(#4e84ef));
+  background: -o-linear-gradient(top, #6FC0F9 0%, #4e84ef 100%);
+  background: linear-gradient(to bottom, #6FC0F9 0%, #4e84ef 100%);
 }
 .dashboard-block_health-bars {
   margin: auto;
@@ -912,7 +907,7 @@ footer div:hover {
   display: block;
   position: absolute;
   left: 2px;
-  top: 3px;
+  top: calc(50% - 7.5px);
   border-radius: 50%;
   width: 15px;
   height: 15px;
@@ -1455,9 +1450,9 @@ footer div:hover {
   overflow: hidden;
 }
 .dashboard-panel__chart .dashboard-panel__bars .dashboard-panel__bar {
-  background: -webkit-gradient(linear, right top, left top, from(#6fc0f9), to(#4e84ef));
-  background: -o-linear-gradient(right, #6fc0f9 0%, #4e84ef 100%);
-  background: linear-gradient(to left, #6fc0f9 0%, #4e84ef 100%);
+  background: -webkit-gradient(linear, right top, left top, from(#6FC0F9), to(#4e84ef));
+  background: -o-linear-gradient(right, #6FC0F9 0%, #4e84ef 100%);
+  background: linear-gradient(to left, #6FC0F9 0%, #4e84ef 100%);
   border-radius: 4px;
   margin: 2px 0;
   height: 24px;

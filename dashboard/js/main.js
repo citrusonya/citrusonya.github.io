@@ -137,6 +137,8 @@
       $('.line-water').remove();
       $('.open-tooltip-2').removeClass('active');
       $('.dashboard-panel__tooltip').removeClass('active');
+      $('#add-puls').prop('checked', false);
+      $('#add-water').prop('checked', false);
     }    
   });
 
