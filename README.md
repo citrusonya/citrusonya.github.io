@@ -15,7 +15,7 @@ Chronology of my works:
 
 [star wars](https://citrusonya.github.io/starwars/)
 
-[dashboard](https://citrusonya.github.io/dashboard/)
+[dashboard](https://citrusonya.github.io/dashboard/) (Desktop site)
 
 Images of templates can be viewed [here](https://github.com/citrusonya/citrusonya.github.io/tree/master/template%20images).
 
