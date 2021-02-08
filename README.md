@@ -7,7 +7,7 @@ Chronology of my works:
 
 [donuts](https://citrusonya.github.io/donuts/)
 
-[editor](https://citrusonya.github.io/editor/)
+[editor](https://citrusonya.github.io/editor/) (Desktop site)
 
 [tajam](https://citrusonya.github.io/tajam/)
 
