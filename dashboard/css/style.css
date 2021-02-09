@@ -925,9 +925,9 @@ footer div:hover {
   box-shadow: 0 0 10px 0 #8DF3FB;
 }
 .dashboard-block__switch:checked::after {
-  -webkit-transform: translateX(17px);
-  -ms-transform: translateX(17px);
-  transform: translateX(17px);
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
 }
 .checkbox {
   display: inline-block;
