@@ -11,7 +11,8 @@ $(function() {
     effect: "slide",
     mousewheelControl: 1
   });
-  
+
+
   $('nav [href]').each(function() {
     if (this.href == window.location.href) {
       $(this).addClass('active');
