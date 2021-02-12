@@ -29,8 +29,26 @@ input {
 	appearance: none;
 }
 
+a {
+	position: relative;
+	font-size: 12px;
+	color: @white;
+	outline: none;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
 a, button {
 	cursor: pointer;
+}
+
+a, p, .block-skills span {
+	font-weight: 300;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.5;
 }
 
 @white: #FFFFFF;
@@ -177,14 +195,7 @@ h1 {
 	flex-wrap: nowrap;
 
 	a {
-		position: relative;
-		font-size: 12px;
-		font-weight: 300;
-		color: @white;
-		outline: none;
-		text-decoration: none;
 		margin: 40px 0 0 50px;
-		text-transform: uppercase;
 		transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s;
 		transform: translate3d(0, -100px, 0);
 		opacity: 0;
@@ -270,14 +281,11 @@ h1 {
 	width: calc(50% - 25px);
 
 	p {
-		font-size: 18px;
 		max-width: 600px;
-		font-weight: 300;
 		padding: 10px 0 0 50px;
 		transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s;
 		transform: translate3d(0, -100px, 0);
 		opacity: 0;
-		line-height: 1.5;
 
 		&:nth-child(1) {
 			transition-delay: 3s;
@@ -325,4 +333,72 @@ h1 {
 .swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
 	margin: 5px 0;
 	display: block;
+}
+
+
+//
+// Skills page
+//
+
+.block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	width: 600px;
+	margin-left: 200px;
+
+	h1 {
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-bottom: 10px;
+	}
+
+	p {
+		white-space: pre;
+		margin: 15px 0 0 0;
+	}
+
+	span {
+		opacity: 0.6;
+	}
+
+	.block-link {
+		font-size: 12px;
+		text-transform: uppercase;
+
+		a {
+			color: @blue;
+			transition: color 0.3s linear;
+
+			&:hover {
+				color: #FFFF33;
+			}
+		}
+	}
+
+	&.block-links {
+		a {
+			font-size: 22px;
+			color: @white;
+			transition: color 0.3s linear;
+			text-transform: none;
+			width: 25px;
+			height: 25px;
+			margin: 35px 10px;
+
+			ion-icon {
+				font-size: 25px;
+			}
+	
+			&:hover {
+				color: @blue;
+			}
+		}
+
+		div {
+			display: flex;
+		}
+	}
 }

@@ -95,9 +95,26 @@ input {
   -moz-appearance: none;
   appearance: none;
 }
+a {
+  position: relative;
+  font-size: 12px;
+  color: #FFFFFF;
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 a,
 button {
   cursor: pointer;
+}
+a,
+p,
+.block-skills span {
+  font-weight: 300;
+}
+p {
+  font-size: 18px;
+  line-height: 1.5;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -220,14 +237,7 @@ h1 span span {
   flex-wrap: nowrap;
 }
 .swiper-slide a {
-  position: relative;
-  font-size: 12px;
-  font-weight: 300;
-  color: #FFFFFF;
-  outline: none;
-  text-decoration: none;
   margin: 40px 0 0 50px;
-  text-transform: uppercase;
   transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s;
   transform: translate3d(0, -100px, 0);
   opacity: 0;
@@ -307,14 +317,11 @@ h1 span span {
   width: calc(50% - 25px);
 }
 .swiper-text p {
-  font-size: 18px;
   max-width: 600px;
-  font-weight: 300;
   padding: 10px 0 0 50px;
   transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s;
   transform: translate3d(0, -100px, 0);
   opacity: 0;
-  line-height: 1.5;
 }
 .swiper-text p:nth-child(1) {
   transition-delay: 3s;
@@ -355,4 +362,54 @@ h1 span span {
 .swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 5px 0;
   display: block;
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 600px;
+  margin-left: 200px;
+}
+.block h1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 10px;
+}
+.block p {
+  white-space: pre;
+  margin: 15px 0 0 0;
+}
+.block span {
+  opacity: 0.6;
+}
+.block .block-link {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.block .block-link a {
+  color: #8df3fb;
+  transition: color 0.3s linear;
+}
+.block .block-link a:hover {
+  color: #FFFF33;
+}
+.block.block-links a {
+  font-size: 22px;
+  color: #FFFFFF;
+  transition: color 0.3s linear;
+  text-transform: none;
+  width: 25px;
+  height: 25px;
+  margin: 35px 10px;
+}
+.block.block-links a ion-icon {
+  font-size: 25px;
+}
+.block.block-links a:hover {
+  color: #8df3fb;
+}
+.block.block-links div {
+  display: flex;
 }
