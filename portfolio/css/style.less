@@ -73,6 +73,33 @@ body {
 	margin: auto;
 }
 
+#loader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-color: @dark;
+	z-index: 100;
+	overflow: hidden;
+
+	.loader-item {
+		min-width: 800px;
+		min-height: 800px;
+		border-radius: 50%;
+		animation: loading 4s infinite;
+		z-index: 102;
+		opacity: 0;
+
+		&:nth-child(1) {	background-color: #5A51B4; animation-delay: 0.5s;	}
+		&:nth-child(2) {	background-color: #392DB4;	}
+		&:nth-child(3) {	background-color: #473db4; animation-delay: 1s;	}
+	}
+}
+
+@keyframes loading {	from { transform: scale(0); opacity: 1;	}	to { transform: scale(1.5); opacity: 0;	}	}
+
 nav {
 	position: fixed;
 	left: 0;
