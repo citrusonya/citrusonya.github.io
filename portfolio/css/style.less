@@ -100,6 +100,42 @@ body {
 
 @keyframes loading {	from { transform: scale(0); opacity: 1;	}	to { transform: scale(1.5); opacity: 0;	}	}
 
+#svg {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+}
+
+.svg-conteiner {
+	animation: neon 5s ease forwards;
+	animation-delay: 5.5s;
+}
+
+.svg-path {
+	fill: none;
+	stroke-width: 1px;
+	stroke: @blue;
+	stroke-dasharray: 200;
+	stroke-dashoffset: 200;
+	animation: dash 5s linear forwards;
+}
+
+@keyframes dash {	
+	to {	stroke-dashoffset: 0;	}
+}
+
+@keyframes neon {
+	0% { filter: drop-shadow( 0 0 0 @white ); }
+	5% { filter: drop-shadow( 0 0 3px @white ); }
+	7% { filter: drop-shadow( 0 0 0 @white ); }
+	8% { filter: drop-shadow( 0 0 3px @white ); }
+	10% { filter: drop-shadow( 0 0 0 @white ); }
+	11% { filter: drop-shadow( 0 0 3px @white ); }
+	30% { filter: drop-shadow( 0 0 0 @white ); }
+	40% { filter: drop-shadow( 0 0 3px @white ); }
+	100% { filter: drop-shadow( 1px 1px 3px @white ); }
+}
+
 nav {
 	position: fixed;
 	left: 0;
@@ -111,6 +147,7 @@ nav {
 	align-items: stretch;
 	align-content: center;
 	width: 60px;
+	z-index: 50;
 
 	a {
 		text-decoration: none;
@@ -167,15 +204,6 @@ nav {
 	}
 }
 
-.svg-circle {
-	fill: #FFFF33;
-}
-
-#text {
-	font-size: 120px;
-	font-weight: 100;
-}
-
 h1 {
 	position: absolute;
 	top: calc(50% - 210px);
@@ -185,7 +213,7 @@ h1 {
 	width: 550px;
 
 	svg {
-		width: 100%;
+		width: 770px;
 		height: 200px;
 	}
 
