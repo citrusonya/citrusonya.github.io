@@ -347,7 +347,7 @@ h1 span span {
   opacity: 0.6;
 }
 .swiper-slide.swiper-slide-active .swiper-image {
-  filter: grayscale(0%);
+  filter: brightness(1);
 }
 @keyframes hover-color {
   from {
@@ -364,7 +364,7 @@ h1 span span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  filter: grayscale(0.5);
+  filter: brightness(0.5);
   transition: all 1s linear;
   transition-delay: 1s;
 }
