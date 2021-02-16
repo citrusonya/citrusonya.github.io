@@ -472,7 +472,6 @@ h1 span span {
   .swiper-container {
     width: calc(100% - 40px);
     margin: auto;
-    padding-top: 60px;
   }
 }
 .swiper-wrapper {
@@ -588,7 +587,7 @@ h1 span span {
   opacity: 0;
   top: 0;
   left: 0;
-  padding: 10px 0 50px 50px;
+  padding: 0 0 50px 50px;
 }
 @media only screen and (max-width: 1024px) {
   .swiper-image h1 {
@@ -598,7 +597,7 @@ h1 span span {
 @media only screen and (max-width: 600px) {
   .swiper-image h1 {
     font-size: 45px;
-    padding-left: 25px;
+    padding: 80px 0 30px 25px;
   }
 }
 .swiper-image-horizontal img {
