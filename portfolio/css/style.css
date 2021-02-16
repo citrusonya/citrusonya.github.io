@@ -92,11 +92,26 @@ ul {
 }
 a {
   position: relative;
-  font-size: 12px;
   color: #FFFFFF;
   outline: none;
   text-decoration: none;
   text-transform: uppercase;
+}
+a:not(.swiper-link) {
+  font-size: 12px;
+}
+.swiper-link {
+  font-size: 14px;
+}
+.swiper-link:hover {
+  -webkit-animation-name: hover-color;
+  animation-name: hover-color;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 a,
 button {
@@ -484,7 +499,7 @@ h1 span span {
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
 }
-.swiper-slide a {
+.swiper-slide a:not(.swiper-link) {
   margin: 40px 0 0 50px;
   -webkit-transition: all 1.5s cubic-bezier(0.215, 0.61, 0.355, 1);
   -o-transition: all 1.5s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -494,7 +509,7 @@ h1 span span {
   opacity: 0;
   width: 65px;
 }
-.swiper-slide a:hover {
+.swiper-slide a:not(.swiper-link):hover {
   -webkit-animation-name: hover-color;
   animation-name: hover-color;
   -webkit-animation-duration: 0.3s;
@@ -675,7 +690,7 @@ h1 span span {
   .swiper-slide-horizontal .swiper-text p {
     padding-left: 20px;
   }
-  .swiper-slide-horizontal .swiper-text a {
+  .swiper-slide-horizontal .swiper-text a:not(.swiper-link) {
     margin-left: 20px;
   }
 }
@@ -683,7 +698,7 @@ h1 span span {
   .swiper-slide-vertical .swiper-text p {
     padding-left: 20px;
   }
-  .swiper-slide-vertical .swiper-text a {
+  .swiper-slide-vertical .swiper-text a:not(.swiper-link) {
     margin-left: 20px;
   }
 }
