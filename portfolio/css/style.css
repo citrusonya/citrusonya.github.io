@@ -424,7 +424,7 @@ h1 span {
 h1 span span {
   display: inline-block;
   font-size: 40px;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 @media only screen and (max-width: 1024px) {
   h1 {
@@ -521,7 +521,7 @@ h1 span span {
   opacity: 1;
 }
 .swiper-slide.swiper-slide-active .swiper-text p:nth-child(2) {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .swiper-slide.swiper-slide-active .swiper-image {
   filter: brightness(1);
@@ -793,7 +793,7 @@ h1 span span {
   animation-delay: 3s;
 }
 .block span {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .block .block-link {
   font-size: 12px;
