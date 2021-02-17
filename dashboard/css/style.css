@@ -423,6 +423,8 @@ footer div:hover {
   background-color: #ffffff;
   letter-spacing: 1.5px;
   outline: none;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 .dashboard-block_profile button:hover {
@@ -843,6 +845,8 @@ footer div:hover {
   background-color: #5A9DCF;
   position: relative;
   outline: none;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
   top: -5px;
 }
@@ -860,6 +864,8 @@ footer div:hover {
   width: 0px;
   height: 0px;
   background-color: #ffffff;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 .dashboard-block__checkbox:checked::after {
@@ -940,6 +946,8 @@ footer div:hover {
   border-radius: 50px;
   background-color: #ffffff;
   letter-spacing: 1.5px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 .checkbox input[type=checkbox] {
@@ -971,6 +979,8 @@ footer div:hover {
   line-height: 30px;
   border: 1px solid #BCBCBC;
   border-radius: 50px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 .checkbox.focused + span {
@@ -1185,6 +1195,8 @@ footer div:hover {
   transform: rotate(135deg);
   border-top: 1px solid #BCBCBC;
   border-right: 1px solid #BCBCBC;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 .dashboard-panel__multiselect #selectBox p {
@@ -1201,6 +1213,8 @@ footer div:hover {
   font-weight: 700;
   color: #BCBCBC;
   margin: 0;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 .dashboard-panel__multiselect:hover .dashboard-panel__arrow,
@@ -1384,6 +1398,8 @@ footer div:hover {
   background: radial-gradient(farthest-corner at 100px 340px, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
   z-index: 2;
   opacity: 0;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
   transition: all 1s ease;
 }
 .dashboard-panel__tooltip div {
