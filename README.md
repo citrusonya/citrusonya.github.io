@@ -21,4 +21,4 @@ Chronology of my works:
 
 Images of templates can be viewed [here](https://github.com/citrusonya/citrusonya.github.io/tree/master/template%20images).
 
-If you need PSD template, write your e-mail, and name of the template [here](https://github.com/citrusonya/citrusonya.github.io/issues).
+If you need PSD template, write me on citrusonya@gmail.com the name of the template and I will send you.
