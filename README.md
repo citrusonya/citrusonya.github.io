@@ -8,15 +8,15 @@ To manage content, I created an admin panel.
 
 :small_orange_diamond: [hatium](https://hatium.ru)
 
-Developed responsive cross-browser web page by template psd: 
+Developed responsive cross-browser web page by template psd.
 
 :small_orange_diamond: [donuts](https://citrusonya.github.io/donuts/)
 
-Developed text editor by my design. (Desktop site)
+Developed text editor by my design. Desktop version.
 
 :small_orange_diamond: [editor](https://citrusonya.github.io/editor/)
 
-Developed responsive cross-browser web page by template psd:
+Developed responsive cross-browser web page by template psd.
 
 :small_orange_diamond: [tajam](https://citrusonya.github.io/tajam/)
 
