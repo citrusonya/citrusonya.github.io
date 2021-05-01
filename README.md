@@ -1,22 +1,21 @@
 # Portfolio
-Hi, my name is Alexandra, in this repository you can see my first works in the area of web page layout. 
-
 ## Chronology of my works:
 
-Developed responsive cross-browser web site by my design (taking into account the wishes of the client). 
+Responsive cross-browser web site by my design. 
 To manage content, I created an admin panel.
 
-:small_orange_diamond: [hatium](https://hatium.ru)
+| [hatium](https://hatium.ru) |
+|:---------:|
 
-Developed responsive cross-browser web page by template psd.
+Responsive cross-browser web page by template psd.
+| [donuts](https://citrusonya.github.io/donuts/) |
+|:---------:|
 
-:small_orange_diamond: [donuts](https://citrusonya.github.io/donuts/)
-
-Developed text editor by my design. Desktop version.
+Text editor by my design. Desktop version.
 
 :small_orange_diamond: [editor](https://citrusonya.github.io/editor/)
 
-Developed responsive cross-browser web page by template psd.
+Responsive cross-browser web page by template psd.
 
 :small_orange_diamond: [tajam](https://citrusonya.github.io/tajam/)
 
@@ -24,12 +23,12 @@ Developed responsive cross-browser web page by template psd.
 
 :small_orange_diamond: [star wars](https://citrusonya.github.io/starwars/)
 
-Developed cross-browser web page by template psd.
+Cross-browser web page by template psd.
 The rest of the navigation details are developed according to my design (everything that is not shown in the template).
 
 :small_orange_diamond: [dashboard](https://citrusonya.github.io/dashboard/)
 
-Developed responsive cross-browser web page by my design.
+Responsive cross-browser web page by my design.
 
 :small_orange_diamond: [portfolio site](https://citrusonya.github.io)
 
