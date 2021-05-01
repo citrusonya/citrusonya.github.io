@@ -1,6 +1,5 @@
 # Portfolio
 This repository contains examples of work.
-________
 ## Chronology of my works:
 
 :small_orange_diamond: Responsive cross-browser web site by my design. 
