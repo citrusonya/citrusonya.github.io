@@ -1,40 +1,39 @@
 # Portfolio
+________
 ## Chronology of my works:
 
 Responsive cross-browser web site by my design. 
 To manage content, I created an admin panel.
 
-| [hatium](https://hatium.ru) |
+| [Hatium](https://hatium.ru) |
 |:---------:|
-
+____
 Responsive cross-browser web page by template psd.
-| [donuts](https://citrusonya.github.io/donuts/) |
+| [Donuts](https://citrusonya.github.io/donuts/) |
 |:---------:|
-
+____
 Text editor by my design. Desktop version.
-
-:small_orange_diamond: [editor](https://citrusonya.github.io/editor/)
-
+| [Editor](https://citrusonya.github.io/editor/) |
+|:---------:|
+____
 Responsive cross-browser web page by template psd.
-
-:small_orange_diamond: [tajam](https://citrusonya.github.io/tajam/)
-
-:small_orange_diamond: [design lab](https://citrusonya.github.io/designLab/)
-
-:small_orange_diamond: [star wars](https://citrusonya.github.io/starwars/)
-
+| [Tajam](https://citrusonya.github.io/tajam/) |
+|:---------:|
+| [Design Lab](https://citrusonya.github.io/designLab/) |
+| [Star Wars](https://citrusonya.github.io/starwars/) |
+____
 Cross-browser web page by template psd.
 The rest of the navigation details are developed according to my design (everything that is not shown in the template).
-
-:small_orange_diamond: [dashboard](https://citrusonya.github.io/dashboard/)
-
+| [Dashboard](https://citrusonya.github.io/dashboard/) |
+|:---------:|
+____
 Responsive cross-browser web page by my design.
-
-:small_orange_diamond: [portfolio site](https://citrusonya.github.io)
-
-Created filtering and sorting JSON file. [Repository link](https://github.com/citrusonya/flights)
-
-:small_orange_diamond: [flights](https://citrusonya.github.io/flights/)
+| [Portfolio Site](https://citrusonya.github.io) |
+|:---------:|
+____
+Created filtering and sorting JSON file. [Repository](https://github.com/citrusonya/flights)
+| [Flights](https://citrusonya.github.io/flights/) |
+|:---------:|
 
 ## Note
 Images of templates can be viewed [here](https://github.com/citrusonya/citrusonya.github.io/tree/master/template%20images).
