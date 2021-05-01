@@ -1,5 +1,5 @@
 # Portfolio
-This repository contains examples of work.
+This repository contains my work.
 ## Chronology of my works:
 
 :small_orange_diamond: Responsive cross-browser web site by my design. 
@@ -40,6 +40,8 @@ The rest of the navigation details are developed according to my design (everyth
 
 | [Flights](https://citrusonya.github.io/flights/) |
 |:---------:|
+
+:small_orange_diamond: Creating form, facet filtration on React + Mobx [Repository](https://github.com/citrusonya/test-location).
 
 ## Note
 Images of templates can be viewed [here](https://github.com/citrusonya/citrusonya.github.io/tree/master/template%20images).
