@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./img/chat.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pop up</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <button type="button" class="open_modal_js">JavaScript</button>
+        <button type="button" class="open_modal_jq">JQuery</button>
+        <p>Для работы JQuery необходимо раскомментировать код</p>
+    </div>
+
+    <div class="modal modal_js modal_jq">
+        <div class="modal__close"></div>
+        <div class="modal__content_main">
+            <h1>Индустриально-складской комплекс</h1>
+            <h2>Юг-Валищево</h2>
+            <p class="modal__content_info">Начало строительства <span>III квартал 2021 г.</span></p>
+            <p>Oтветственное хранение +24°C /-24°C</p>
+            <p>Аренда мультитемпературных камер</p>
+            <p>Аренда производственных площадей</p>
+            <p>Туннельная шоковая заморозка</p>
+            <div class="modal__btn_more">
+              <a href="https://github.com/citrusonya" target="_blank">Подробнее</a>
+              <div class="modal__btn_more_arrow"></div>               
+            </div>
+        </div>
+        <div class="modal_content_side">
+          <div class="modal_content_side_category"></div>
+        </div>
+    </div>
+    <div class="modal__background"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
