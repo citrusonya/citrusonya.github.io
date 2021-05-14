@@ -36,17 +36,17 @@ The rest of the navigation details are developed according to my design (everyth
 | [Portfolio Site](https://citrusonya.github.io) |
 |:---------:|
 
-:small_orange_diamond: Created filtering and sorting JSON file on JavaScript. [Repository](https://github.com/citrusonya/flights).
+:small_orange_diamond: Created filtering and sorting JSON file on JavaScript. [Repository](https://github.com/citrusonya/flights)
 
 | [Flights](https://citrusonya.github.io/flights/) |
 |:---------:|
 
-:small_orange_diamond: Creating form, facet filtration on React + Mobx [Repository](https://github.com/citrusonya/test-location).
+:small_orange_diamond: Creating form, facet filtration on React + Mobx. [Repository](https://github.com/citrusonya/test-location)
 
 | [Pop Up](https://citrusonya.github.io/popUp/) |
 |:---------:|
 
-:small_orange_diamond: Pop Up on JavaScript and JQuery [Repository](https://github.com/citrusonya/pop-up).
+:small_orange_diamond: Pop Up on JavaScript and JQuery. [Repository](https://github.com/citrusonya/pop-up)
 
 ## Note
 Images of templates can be viewed [here](https://github.com/citrusonya/citrusonya.github.io/tree/master/template%20images).
