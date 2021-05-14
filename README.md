@@ -43,6 +43,11 @@ The rest of the navigation details are developed according to my design (everyth
 
 :small_orange_diamond: Creating form, facet filtration on React + Mobx [Repository](https://github.com/citrusonya/test-location).
 
+| [Pop Up](https://citrusonya.github.io/popUp/) |
+|:---------:|
+
+:small_orange_diamond: Pop Up on JavaScript and JQuery [Repository](https://github.com/citrusonya/pop-up).
+
 ## Note
 Images of templates can be viewed [here](https://github.com/citrusonya/citrusonya.github.io/tree/master/template%20images).
 
