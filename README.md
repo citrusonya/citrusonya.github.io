@@ -1,5 +1,5 @@
 # Portfolio
-This repository contains my work.
+
 ## Chronology of my works:
 
 | Demo | Description | Repository |
